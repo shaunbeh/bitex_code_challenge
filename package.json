@@ -8,7 +8,8 @@
     "start": "next start",
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "prepare": "husky",
-    "cz": "cz"
+    "cz": "cz",
+    "codegen:gecko": "npx swagger-typescript-api@13.0.16 -p ./src/types/api/gecko/gecko-schema.json -o ./src/types/api/gecko --no-client --modular  --extract-request-params  --extract-enums"
   },
   "dependencies": {
     "@commitlint/config-conventional": "^19.2.2",
