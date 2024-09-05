@@ -1,5 +1,21 @@
 {
+  "tokensList": {
+    "table": {
+      "rank": "رتبه",
+      "name": "نام",
+      "symbol": "نماد",
+      "24HourChange": "تغییرات (24h)",
+      "price": "قیمت",
+      "weeklyChart": "نمودار هفتگی",
+      "marketCap": "ارزش بازار"
+    }
+  },
   "links": {
-    "homepage": "صفحه اصلی"
+    "homepage": "خانه"
+  },
+  "coins": {
+    "whitepater": "Whitepaper",
+    "website": "وبسایت",
+    "price": "قیمت"
   }
 }
