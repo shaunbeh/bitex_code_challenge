@@ -30,13 +30,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 ParamsT,
               ];
 
-              const fullUrl = `/api${url.toLowerCase()}`;
               let response;
 
               if (method.toLowerCase() === 'post') {
-                response = await axios.post(fullUrl, params ?? {});
+                response = await axios.post(url, params ?? {});
               } else {
-                response = await axios.get(fullUrl, {
+                response = await axios.get(url, {
                   params,
                 });
               }
