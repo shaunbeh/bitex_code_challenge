@@ -29,19 +29,19 @@ const PaginationBtn = ({
       variant='secondary'
       className={cn(
         isCurr ? 'bg-primary' : 'hover:bg-primary',
-        'flex items-base gap-2 justify-center',
+        'flex items-base rounded-md gap-2 justify-center',
       )}
     >
       {isPrev && (
         <>
           <ChevronLeftIcon />
-          قبلی
+          <span className='hidden md:block'>قبلی</span>
         </>
       )}
       {!isPrev && !isNext && page}
       {isNext && (
         <>
-          بعدی
+          <span className='hidden md:block'> بعدی</span>
           <ChevronRightIcon />
         </>
       )}

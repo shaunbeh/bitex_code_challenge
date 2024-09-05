@@ -39,7 +39,7 @@ export const TablePagingationComponent = ({
   });
 
   return (
-    <Pagination className='bottom-1'>
+    <Pagination dir='ltr' className='bottom-1 border-t pt-4'>
       <PaginationContent>
         <PaginationBtn
           handleCurrPage={handleCurrPage}

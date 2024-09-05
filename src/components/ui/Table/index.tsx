@@ -27,7 +27,7 @@ export default function BasicTable<T>({
   });
 
   return (
-    <div className='my-4 flex flex-col pb-10'>
+    <div className='custom-scroll my-4 flex w-full grow flex-col overflow-y-auto px-4'>
       <div className='inline-block'>
         <div className='custom-scroll-thin w-full overflow-x-auto'>
           <table
@@ -78,7 +78,7 @@ export default function BasicTable<T>({
                   <tr
                     key={row.id}
                     className={cn(
-                      'hover:bg-secondary',
+                      'hover:bg-secondary border-b last:border-b-0 first:border-t',
                       // eslint-disable-next-line no-nested-ternary
                       rowClassName
                         ? rowIndex % 2 === 0
