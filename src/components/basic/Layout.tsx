@@ -28,11 +28,13 @@ export default function Layout({ children }: { children: JSX.Element }) {
       <Header />
       <main
         className={clsx(
-          'relative mt-20 flex min-h-screen flex-1 flex-col',
+          'relative flex h-full flex-col pt-16',
           YekanBakh.className,
         )}
       >
-        <div className='flex flex-1 grow flex-col bg-white'>{children}</div>
+        <div className='flex h-full flex-1 grow flex-col bg-gray-50'>
+          {children}
+        </div>
       </main>
     </>
   );

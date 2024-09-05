@@ -95,7 +95,7 @@ tfoot th {
   -ms-overflow-style: auto !important;
 
   &::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--primary));
+    background-color: hsl(var(--secondary));
     &:hover {
       cursor: pointer !important;
     }
@@ -114,7 +114,7 @@ tfoot th {
   }
   -ms-overflow-style: auto !important;
   &::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--muted-foreground));
+    background-color: hsl(var(--secondary));
     &:hover {
       cursor: pointer !important;
     }
@@ -127,13 +127,10 @@ tfoot th {
   }
 }
 
-::-moz-selection {
-  /* Code for Firefox */
-  color: hsl(var(--popover)) !important;
-  background: hsl(var(--primary)) !important;
-}
-
-::selection {
-  color: hsl(var(--popover)) !important;
-  background: hsl(var(--primary)) !important;
+.highlight a {
+  background: hsl(var(--primary) / 0.2);
+  padding: 4px 2px 0 2px;
+  border-radius: 4px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
