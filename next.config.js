@@ -22,17 +22,11 @@ const nextConfig = {
     return config;
   },
   trailingSlash: true,
-  async rewrites() {
-    return [];
-  },
   reactStrictMode: true,
   images: {
     remotePatterns: [
       {
-        hostname: "img.brokersview.com",
-      },
-      {
-        hostname: "pc-cdn.brokersview.com",
+        hostname: "coin-images.coingecko.com",
       },
     ],
   },

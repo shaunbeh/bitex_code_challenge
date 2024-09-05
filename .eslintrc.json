@@ -7,7 +7,7 @@
   ],
   "overrides": [
     {
-      "files": ["**/*.ts", "**/*.tsx", "**/*.jsx"],
+      "files": ["**/*.ts", "**/*.js", "**/*.tsx", "**/*.jsx"],
       "plugins": [
         "@typescript-eslint",
         "unused-imports",
